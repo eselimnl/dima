@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to DiMA Help Page’s documentation! &mdash; DiMA Help Page .. documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> DiMA Help Page
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to DiMA Help Page’s documentation!</a></li>
+<li><a class="reference internal" href="#table-of-contents">Table of contents</a><ul>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#browser-compatibility">Browser compatibility</a></li>
+<li><a class="reference internal" href="#workflow-of-dima">Workflow of DiMA</a></li>
+<li><a class="reference internal" href="#input-file-and-parameters">Input file and parameters</a></li>
+<li><a class="reference internal" href="#how-to-interpret-the-results">How to interpret the results</a></li>
+<li><a class="reference internal" href="#faqs">FAQs</a></li>
+<li><a class="reference internal" href="#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">DiMA Help Page</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Welcome to DiMA Help Page’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-dima-help-page-s-documentation">
+<h1>Welcome to DiMA Help Page’s documentation!<a class="headerlink" href="#welcome-to-dima-help-page-s-documentation" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="table-of-contents">
+<h1>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline"></a></h1>
+<ul class="simple" id="letsbegin">
+<li><p><a class="reference internal" href="myfile.html#section-one"><span class="std std-ref">About</span></a></p></li>
+<li><p><a class="reference internal" href="myfile.html#section-two"><span class="std std-ref">Browser compatibility</span></a></p></li>
+<li><p><a class="reference internal" href="myfile.html#section-three"><span class="std std-ref">Workflow of DiMA</span></a></p></li>
+<li><p><a class="reference internal" href="myfile.html#section-four"><span class="std std-ref">Input file and parameters</span></a></p></li>
+<li><p><a class="reference internal" href="myfile.html#section-five"><span class="std std-ref">How to interpret the results</span></a></p></li>
+<li><p><a class="reference internal" href="myfile.html#section-six"><span class="std std-ref">FAQs</span></a></p></li>
+<li><p><a class="reference internal" href="myfile.html#section-seven"><span class="std std-ref">Support</span></a></p></li>
+</ul>
+<section class="tex2jax_ignore mathjax_ignore" id="about">
+<span id="section-one"></span><h2>About<a class="headerlink" href="#about" title="Permalink to this headline"></a></h2>
+<p>Protein sequence diversity is one of the major challenges in the design of diagnostic, prophylactic and therapeutic interventions against viruses. DiMA is designed to facilitate the dissection of protein sequence diversity dynamics for viruses. DiMA provides a quantitative measure of sequence diversity by use of Shannon’s entropy, applied via a user-defined <em>k-mer</em> sliding window. Further, the entropy value is corrected for sample size bias by applying a statistical adjustment. Additionally, DiMA further interrogates the diversity by dissecting the entropy value at each <em>k-mer</em> position to various diversity motifs. The distinct <em>k-mer</em> sequences at each position are classified into the following motifs based on their incidence. Index is the predominant sequence, and all other distinct <em>k-mer</em>s are referred to as total variants, sub-classified into major variant (the predominant variant), minor variants (<em>k-mer</em>s with the incidence in between major and unique motifs) and unique variants (seen once in the alignment). Moreover, the description line of the sequences in the alignment can be formatted for inclusion of meta-data that can be tagged to the diversity motifs. DiMA enables comparative diversity dynamics analysis, within and between proteins of a virus species, and proteomes of different viral species.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="browser-compatibility">
+<span id="section-two"></span><h2>Browser compatibility<a class="headerlink" href="#browser-compatibility" title="Permalink to this headline"></a></h2>
+<p><img alt="browserc" src="_images/browserc.jpg" /></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="workflow-of-dima">
+<span id="section-three"></span><h2>Workflow of DiMA<a class="headerlink" href="#workflow-of-dima" title="Permalink to this headline"></a></h2>
+<p><img alt="workflow" src="_images/workflow.jpg" />
+<strong>Figure 1</strong><br />
+<strong>Input:</strong> Viral proteome sequences are obtained from publicly available databases (NCBI virus, GISAID, etc.) and submitted to DiMA as in aligned FASTA format.<br />
+<strong>Process:</strong> DiMA applies a user-defined size of the <em>k-mer</em> sliding window approach. Kmer entropy is calculated by Shannon’s entropy formula defined for nonamers. Sample size bias is used to justify the entropy value (Default is 30 and sample size bias corrections are not being applied to low-support positions). 4 types of diversity motifs are created based on the incidence of the <em>k-mer</em> of a given position.<br />
+<strong>Output:</strong> The entropy values, diversity motifs, and each of the <em>k-mer</em> corresponding metadata is plotted to provide a panoramic overview of the protein sequence diversity.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="input-file-and-parameters">
+<span id="section-four"></span><h2>Input file and parameters<a class="headerlink" href="#input-file-and-parameters" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><strong>Input file</strong>
+DiMA only uses multiple sequence alignment (DNA or protein sequences) in FASTA format. Any alignment tool can be used to produce the MSA, such as MAFFT or MUSCLE as long as the input sequences provided to DiMA are in FASTA format.</p></li>
+<li><p><strong>Parameters</strong></p>
+<ul>
+<li><p><strong>Viral sequence name</strong><br />
+Name your protein analysis (such as Nucleoprotein, Matrix protein, Polymerase protein etc.)</p></li>
+<li><p><strong>Low support threshold</strong><br />
+The minimum required sequence support is to not be called “Low support” for each k-mer position. These positions are analyzed and tagged in the result to not misguide scientific interpretations.</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default value is <strong>30</strong>.</p>
+</div>
+<ul class="simple">
+<li><p><strong>Kmer length</strong>
+Select <em>k-mer</em> window size appropriate for the analysis.<br />
+While the minimum applicable size is 3, the maximum is equal to the total number position in the uploaded alignment. By default, DiMA uses a window size of nine (9; nonamer) to evaluate the viral diversity with respect to cellular immune response.</p></li>
+<li><p><strong>Header format to include metadata</strong>
+This optional functionality labels k-mers with corresponding metadata such as collection date, country origin, isolation host of the sequence. Simply, it parses the information on the sequence header (definition line).<br />
+Example: <em>accession|collection date|country|isolation host</em><br />
+Because the format of metadata varies between databases, DiMA has relied on the format of NCBI Virus.</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="how-to-interpret-the-results">
+<span id="section-five"></span><h2>How to interpret the results<a class="headerlink" href="#how-to-interpret-the-results" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><strong>Result presentation</strong></p></li>
+</ul>
+<p><img alt="sections" src="_images/sectionss.svg" /></p>
+<ul class="simple">
+<li><p><strong>Section 1 (Summary statistics)</strong></p></li>
+</ul>
+<p>Find a summary of information about your query: request ID, submission parameters, the total number of sequences in the alignment, and the number of low support positions.
+<img alt="section1" src="_images/section1.jpg" /></p>
+<ul class="simple">
+<li><p><strong>Section 2 (Proteome diversity)</strong></p></li>
+</ul>
+<p>Entropy values indicate the level of variability at the corresponding k-mer positions, with zero representing completely conserved positions. Plots are responsive and dynamic, one can easily hover and see the approximate entropy value of the hovered position.
+<img alt="section2" src="_images/section2.jpg" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For a benchmark, the peak absolute entropy of 9.2 and total variants of 98% were observed for HIV-1 clade B <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0059994">(Hu et al., 2013)</a>.</p>
+</div>
+<ul class="simple">
+<li><p><strong>Section 3 (Diversity motifs)</strong></p></li>
+</ul>
+<p>All sequences at each of the <em>k-mer</em> positions in the protein alignments were quantified and ranked based on the incidences of distinct sequences (as part of diversity motifs) present at the position, as described in <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0059994">Hu et al. (2013)</a>.</p>
+<a class="bg-primary reference internal image-reference" href="_images/diversitymotifs.jpg"><img alt="diversitymotifs" class="bg-primary align-center" src="_images/diversitymotifs.jpg" style="width: 300px;" /></a>
+<p>Users can select a position from the “SELECTED POSITION” box located in the upper right corner.</p>
+<a class="bg-primary reference internal image-reference" href="_images/section3.jpg"><img alt="section3" class="bg-primary align-center" src="_images/section3.jpg" style="width: 400px;" /></a>
+<ul class="simple">
+<li><p><strong>Section 4 (Metadata)</strong></p></li>
+</ul>
+<p>If the header format is provided in the analysis parameters, DiMA will make a pie chart for each type of metadata.<br />
+The user should select a <em>k-mer</em> from the selected position. In the example below, the index sequence is selected and host species distribution is shown in the plot.</p>
+<p><img alt="section4" src="_images/section4.jpg" /></p>
+<ul class="simple">
+<li><p><strong>Download</strong></p></li>
+</ul>
+<p>Download the result file in JSON format from the most right bottom icon.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="faqs">
+<span id="section-six"></span><h2>FAQs<a class="headerlink" href="#faqs" title="Permalink to this headline"></a></h2>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="support">
+<span id="section-seven"></span><h2>Support<a class="headerlink" href="#support" title="Permalink to this headline"></a></h2>
+<p>Please don’t hesitate to reach out to the developers for your questions, comments, or other feedback through mailing …&#64;gmail.com.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Authors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

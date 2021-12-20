@@ -55,17 +55,17 @@ Because the format of metadata varies between databases, DiMA has relied on the 
 
 - **Result presentation**
 
-![sections](images/sectionss.svg)
+![sections](images/sectionss.png)
 
 - **Section 1 (Summary statistics)**
 
 Find a summary of information about your query: request ID, submission parameters, the total number of sequences in the alignment, and the number of low support positions. 
-![section1](images/section1.jpg)
+![section1](images/section1.png)
 
 - **Section 2 (Proteome diversity)**
 
 Entropy values indicate the level of variability at the corresponding k-mer positions, with zero representing completely conserved positions. Plots are responsive and dynamic, one can easily hover and see the approximate entropy value of the hovered position. 
-![section2](images/section2.jpg)
+![section2](images/section2.png)
 ```{note}
 For a benchmark, the peak absolute entropy of 9.2 and total variants of 98% were observed for HIV-1 clade B [(Hu et al., 2013)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0059994). 
 ```
@@ -80,10 +80,9 @@ All sequences at each of the *k-mer* positions in the protein alignments were qu
 :align: center
 ```
 
-
 Users can select a position from the “SELECTED POSITION” box located in the upper right corner.
 
-```{image} images/section3.jpg
+```{image} images/section3.png
 :alt: section3
 :class: bg-primary
 :width: 400px
@@ -95,7 +94,7 @@ Users can select a position from the “SELECTED POSITION” box located in the 
 If the header format is provided in the analysis parameters, DiMA will make a pie chart for each type of metadata.\
 The user should select a *k-mer* from the selected position. In the example below, the index sequence is selected and host species distribution is shown in the plot.
 
-![section4](images/section4.jpg)
+![section4](images/section4.png)
 
 - **Download**
 
@@ -106,5 +105,9 @@ Download the result file in JSON format from the most right bottom icon.
 
 (section-seven)=
 # Support
-Please don’t hesitate to reach out to the developers for your questions, comments, or other feedback through mailing …@gmail.com.
+Please don’t hesitate to reach out to the developers for your questions, comments, or other feedback through mailing *bioinfo@perdanauniversity.edu.my*
 
+## Contributions
+
+- 
+- 

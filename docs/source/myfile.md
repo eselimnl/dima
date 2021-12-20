@@ -15,7 +15,7 @@ Protein sequence diversity is one of the major challenges in the design of diagn
 (section-two)=
 # Browser compatibility
 
-![browserc](images/browserc.jpg)
+![browserc](images/browserc.png)
 
 (section-three)=
 # Workflow of DiMA
@@ -107,7 +107,14 @@ Download the result file in JSON format from the most right bottom icon.
 # Support
 Please don’t hesitate to reach out to the developers for your questions, comments, or other feedback through mailing *bioinfo@perdanauniversity.edu.my*
 
-## Contributions
+## Team
 
-- 
-- 
+- Shan Tharanga 
+- Yongli Hu
+- Olivo Miotto
+- Eyyüb Selim Ünlü
+- Muhammet A. Çelik
+- Muhammed Miran Öncel
+- Hilal Hekimoğlu
+- Muhammad Farhan Sjaugi
+- Mohammad Asif Khan

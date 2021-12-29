@@ -21,7 +21,7 @@ Protein sequence diversity is one of the major challenges in the design of diagn
 # Workflow of DiMA
 
 ![workflow](images/workflow.jpg)
-**Figure 1**\
+**Figure 2**\
 **Input:** Viral proteome sequences are obtained from publicly available databases (NCBI virus, GISAID, etc.) and submitted to DiMA as in aligned FASTA format.\
 **Process:** DiMA applies a user-defined size of the *k-mer* sliding window approach. Kmer entropy is calculated by Shannon’s entropy formula defined for nonamers. Sample size bias is used to justify the entropy value (Default is 30 and sample size bias corrections are not being applied to low-support positions). 4 types of diversity motifs are created based on the incidence of the *k-mer* of a given position.\
 **Output:** The entropy values, diversity motifs, and each of the *k-mer* corresponding metadata is plotted to provide a panoramic overview of the protein sequence diversity.

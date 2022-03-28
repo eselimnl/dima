@@ -11,35 +11,35 @@ Welcome to DiMA User Manual
    :caption: Contents:
     about.md
 
-About
+1. About
 ==================
 
 .. about:
 .. include:: about.md
    :parser: myst_parser.sphinx_
 
-Workflow & Algorithm
+2. Algorithms
 ==================
 
 .. workflow_algorithm:
 .. include:: algorithm.md
    :parser: myst_parser.sphinx_
 
-Input file and parameters
+3. Input file and parameters
 ==================
 
 .. parameters:
 .. include:: parameters.md
    :parser: myst_parser.sphinx_
    
-How to interpret the results
+4. How to interpret the results
 ==================
 
 .. results:
 .. include:: results.md
    :parser: myst_parser.sphinx_   
    
-Tutorial
+5. Tutorial
 ==================
 
 .. tutorial:
@@ -47,7 +47,7 @@ Tutorial
    :parser: myst_parser.sphinx_
    
    
-FAQs
+6. FAQs and Support
 ==================
 
 .. faqs:

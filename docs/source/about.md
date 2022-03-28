@@ -1,4 +1,4 @@
-# Sequence Diversity Dynamics Analyser for Viruses (DiMA)
+# 1.1. Sequence Diversity Dynamics Analyser for Viruses (DiMA)
 Viral infectious diseases are a major public health threat. Protein sequence diversity is one of the major challenges in the design of diagnostic, prophylactic and therapeutic interventions against viruses. The diversity can be an outcome of a combination of underlying evolutionary processes (mutation, recombination, and assortment). A continuing goal is a greater understanding of viral proteome sequence diversity, the dynamics of substitutions, and effective strategies to overcome the diversity for drug or vaccine design.
 
 Herein, we present Diversity Motif Analyser (DiMA), a tool designed to facilitate the quantification and dissection of viral protein sequence diversity dynamics. DiMA provides a quantitative measure of sequence diversity by use of Shannon’s entropy (PMID: [18698358](https://pubmed.ncbi.nlm.nih.gov/18698358/)), applied via a user-defined *k-mer* sliding window to a protein alignment. Additionally, DiMA further interrogates the diversity by dissecting the entropy at each aligned *k-mer* position to various diversity motifs (PMIDs: [32518710](https://pubmed.ncbi.nlm.nih.gov/32518710/), [23593157](https://pubmed.ncbi.nlm.nih.gov/23593157/)), based on the incidence of distinct *k-mer* sequences at the position. At a given position, index is the predominant sequence and all other distinct *k-mer*s are referred to as total variants to the index, sub-classified into major variant (the most common variant), minor variants (comprising of *k-mer*s with incidence lower than major and higher than unique), and unique variants (*k-mer*s seen only once in the alignment). Moreover, the description line of the sequences in the input alignment can be enriched for inclusion of meta-data as part of the analysis, such as spatio-temporal information, among others. DiMA outputs a JSON file that provides multiple facets of sequence diversity: sequence name, *k-mer* position, entropy, distinct *k-mer*s at the position, and their incidence, motif classification and metadata (if available). DiMA enables comparative sequence diversity dynamics analyses, within and between proteins of a virus species, and proteomes of different species.
@@ -7,7 +7,7 @@ DiMA is an outcome of many years of viral studies on several different species s
 
 DiMA webserver has been under development since March 2020. It has been extensively tested with 18 protein datasets (9 structural and 9 non-structural) from six viral species. External validation of our tool has been performed by three individuals, with a total of 36 protein datasets (18 structural and 18 non-structural), originating from three viral species.
 
-# Defining diversity motifs
+# 1.2. Defining diversity motifs
 
 For a given protein alignment, all sequences at each of the aligned *k-mer* positions are quantified for distinct sequences and ranked-classified into diversity motifs based on their incidences, as described in Hu et al. (2013) (Supplementary Figure 1, see extract below) (PMID: [23593157](https://pubmed.ncbi.nlm.nih.gov/23593157/)).  
 
@@ -20,11 +20,11 @@ For a given protein alignment, all sequences at each of the aligned *k-mer* posi
 <a></a> 
 : **Figure 1. Definitions of diversity motifs.** The ‘‘Index’’ nonamer is the most prevalent sequence, present in 8 of the 20 isolates. The ‘‘Major’’ variant is the most common variant of the index (5/20). ‘‘Minor’’ variants are multiple different repeated sequences, each with incidences less than the major variant. ‘‘Unique’’ variants are those represented by a single aligned sequence. Distinct variant sequences at a given nonamer position are the different sequence at the position; in this example one of major, two of minor, and three of unique.
 (section-two)=
-# Browser compatibility
+# 1.3. Browser compatibility
 
 ![browserc](images/browserc.png)
 
-# Accesibility
+# 1.4. Accesibility
 
 The webserver is publicly available at:
 [https://dima.bezmialem.edu.tr/](https://dima.bezmialem.edu.tr/)

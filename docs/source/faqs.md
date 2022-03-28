@@ -2,10 +2,10 @@
 
 For now: **Shan et al., https://dima.bezmialem.edu.tr/**
 
-# Support
+# 6.1. Support
 Please don’t hesitate to reach out to the developers for your questions, comments, or other feedback through mailing *bioinfo@perdanauniversity.edu.my*
 
-# Team
+# 6.2. Team
 
 - Shan Tharanga 
 - Yongli Hu

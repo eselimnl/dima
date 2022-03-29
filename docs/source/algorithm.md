@@ -11,11 +11,12 @@
 :width: 1000px
 :align: center
 ```
+<a></a> 
+: **Figure 3. Entropy algorithm.** Bla bla bla
+
+
 # 2.2. Frontend/Backend Frameworks
 
 Python FastAPI utilized for DiMA webserver Backend. 
 ReactJS utilized for DiMA webserver Frontend.
-
-<a></a> 
-: **Figure 3. Entropy algorithm.** Bla bla bla
 

@@ -7,7 +7,55 @@ DiMA is an outcome of many years of viral studies on several different species s
 
 DiMA webserver has been under development since March 2020. It has been extensively tested with 18 protein datasets (9 structural and 9 non-structural) from six viral species. External validation of our tool has been performed by three individuals, with a total of 36 protein datasets (18 structural and 18 non-structural), originating from three viral species.
 
-# 1.2. Defining diversity motifs
+# 1.2. Novel features 
+
+```{list-table} Table 1. Novel features of DiMA compared to similar web servers
+:header-rows: 1
+:name: example-table
+
+* - Features
+  - [DiMA](https://dima.bezmialem.edu.tr/)
+  - [PVS](http://imed.med.ucm.es/PVS/)
+  - [LANL Entropy](https://www.hiv.lanl.gov/content/sequence/ENTROPY/entropy.html)
+* - Nucleic acid/amino acid sequence
+  - ✅ / ✅
+  - ❌ / ✅
+  - ✅ / ✅
+* - Shannon Entropy on user-defined sliding window
+  - ✅
+  - ❌
+  - ✅
+* - Size bias correction
+  - ✅
+  - ❌
+  - ❌
+* - Diversity motifs
+  - ✅
+  - ❌
+  - ❌
+* - Frequency calculation for each k-mer
+  - ✅
+  - ❌
+  - ❌
+* - Metadata inclusion
+  - ✅
+  - ❌
+  - ❌
+* - Concatenation of consecutive conserved sequences
+  - ✅
+  - ✅
+  - ❌
+* - Multiple interactive plots 
+  - ✅
+  - ❌
+  - ❌
+* - Process alignments up to 100 megabytes
+  - ✅ 
+  - ❌
+  - ❌
+```
+
+# 1.3. Defining diversity motifs
 
 For a given protein alignment, all sequences at each of the aligned *k-mer* positions are quantified for distinct sequences and ranked-classified into diversity motifs based on their incidences, as described in Hu et al. (2013) (Supplementary Figure 1, see extract below) (PMID: [23593157](https://pubmed.ncbi.nlm.nih.gov/23593157/)).  
 
@@ -20,11 +68,11 @@ For a given protein alignment, all sequences at each of the aligned *k-mer* posi
 <a></a> 
 : **Figure 1. Definitions of diversity motifs.** The ‘‘Index’’ nonamer is the most prevalent sequence, present in 8 of the 20 isolates. The ‘‘Major’’ variant is the most common variant of the index (5/20). ‘‘Minor’’ variants are multiple different repeated sequences, each with incidences less than the major variant. ‘‘Unique’’ variants are those represented by a single aligned sequence. Distinct variant sequences at a given nonamer position are the different sequence at the position; in this example one of major, two of minor, and three of unique.
 (section-two)=
-# 1.3. Browser compatibility
+# 1.4. Browser compatibility
 
 ![browserc](images/browserc.png)
 
-# 1.4. Accesibility
+# 1.5. Accesibility
 
 The webserver is publicly available at:
 [https://dima.bezmialem.edu.tr/](https://dima.bezmialem.edu.tr/)

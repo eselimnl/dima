@@ -12,7 +12,7 @@
 :align: center
 ```
 <a></a> 
-: **Figure 3. Entropy algorithm.** Bla bla bla
+: **Figure 3. Entropy algorithm.** 
 
 
 # 2.2. Frontend/Backend Frameworks

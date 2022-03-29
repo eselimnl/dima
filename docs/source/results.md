@@ -5,7 +5,7 @@
 :width: 800
 ```
 <a></a> 
-: **Figure 4. Sample output from DiMA analysis.** Bla bla bla
+: **Figure 4. Sample output from DiMA analysis.**
 ```{note}
 Sample results are accesible for a self-exploration: 
 - [MERS virus Spike protein nucleic acid sequences](https://dima.bezmialem.edu.tr/results/97a93eb4-6add-4824-b88d-02ff79af6acf), [MERS virus Spike protein amino acid sequences](https://dima.bezmialem.edu.tr/results/387bc2ce-f9ae-4a99-a50e-fad3355fcf72) 

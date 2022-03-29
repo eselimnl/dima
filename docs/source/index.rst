@@ -39,15 +39,7 @@ Welcome to DiMA User Manual
 .. include:: results.md
    :parser: myst_parser.sphinx_   
    
-5. Tutorial
-==================
-
-.. tutorial:
-.. include:: tutorial.md
-   :parser: myst_parser.sphinx_
-   
-   
-6. FAQs and Support
+5. FAQs and Support
 ==================
 
 .. faqs:

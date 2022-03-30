@@ -9,9 +9,10 @@ Please don’t hesitate to reach out to the developers for your questions, comme
 
 - Shan Tharanga 
 - Yongli Hu
-- Olivo Miotto
 - Eyyüb Selim Ünlü
+- Muhammad Farhan Sjaugi
 - Muhammet A. Çelik
 - Hilal Hekimoğlu
-- Muhammad Farhan Sjaugi
+- Olivo Miotto
+- Muhammed Miran Öncel
 - Mohammad Asif Khan

@@ -49,13 +49,13 @@ DiMA webserver has been under development since March 2020. It has been extensiv
   - ✅
   - ❌
   - ❌
-* - Process alignments up to 100 megabytes
+* - Process alignments up to 100 megabytes (MB)
   - ✅⭐ 
   - ❌
   - ❌
 ```
 <a></a> 
-: ⭐ Larger possible with [CLI version](https://github.com/PU-SDS/DiMA).
+: ⭐ Large file possible with [CLI version](https://github.com/PU-SDS/DiMA).
 # 1.3. Defining diversity motifs
 
 For a given sequence alignment, all sequences at each of the aligned *k-mer* positions are quantified for distinct sequences and ranked-classified into diversity motifs based on their incidences, as described in Hu et al. (2013) (Supplementary Figure 1, see extract below) (PMID: [23593157](https://pubmed.ncbi.nlm.nih.gov/23593157/)).  

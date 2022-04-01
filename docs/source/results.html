@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4.1. Section 1 - Summary &mdash; DiMA User Manual .. documentation</title>
+  <title>4.1. Summary &mdash; DiMA User Manual .. documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -38,10 +38,10 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">4.1. Section 1 - Summary</a></li>
-<li><a class="reference internal" href="#section-2-sequence-diversity">4.2. Section 2 - Sequence diversity</a></li>
-<li><a class="reference internal" href="#section-3-and-4-diversity-motifs">4.3. Section 3 and 4 - Diversity motifs</a></li>
-<li><a class="reference internal" href="#section-5-sequence-metadata">4.4. Section 5 - Sequence Metadata</a></li>
+<li><a class="reference internal" href="#">4.1. Summary</a></li>
+<li><a class="reference internal" href="#sequence-diversity">4.2. Sequence diversity</a></li>
+<li><a class="reference internal" href="#diversity-motifs">4.3. Diversity motifs</a></li>
+<li><a class="reference internal" href="#sequence-metadata">4.4. Sequence Metadata</a></li>
 <li><a class="reference internal" href="#data-synthesis-and-further-analysis">4.5. Data Synthesis and Further Analysis</a></li>
 <li><a class="reference internal" href="#download">4.6. Download</a></li>
 </ul>
@@ -60,7 +60,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>4.1. Section 1 - Summary</li>
+      <li>4.1. Summary</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/results.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -70,7 +70,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <a class="bg-primary reference internal image-reference" href="_images/result_example-1.jpg"><img alt="result" class="bg-primary align-center" src="_images/result_example-1.jpg" style="width: 800px;" /></a>
+  <a class="bg-primary reference internal image-reference" href="_images/result_example-1.jpg" id="figure-4"><img alt="result" class="bg-primary align-center" id="figure-4" src="_images/result_example-1.jpg" style="width: 800px;" /></a>
 <dl class="simple myst">
 <dt><a></a></dt><dd><p><strong>Figure 4. Sample output from DiMA analysis.</strong></p>
 </dd>
@@ -83,9 +83,9 @@
 <li><p><a class="reference external" href="https://dima.bezmialem.edu.tr/results/1419764f-ea40-4a68-890c-696e73013f0a">Lassa virus Nucleoprotein nucleic acid sequences</a>, <a class="reference external" href="https://dima.bezmialem.edu.tr/results/7d4e04b3-21f5-440e-a0b9-a46bf927a35b">Lassa virus amino acid sequences</a></p></li>
 </ul>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="section-1-summary">
-<h1>4.1. Section 1 - Summary<a class="headerlink" href="#section-1-summary" title="Permalink to this headline"></a></h1>
-<p>Summary information that is general to the input alignment and specific to a given <em>k-mer</em> position.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="summary">
+<h1>4.1. Summary<a class="headerlink" href="#summary" title="Permalink to this headline"></a></h1>
+<p>Summary information (<a class="reference internal" href="#figure-4"><span class="std std-ref">Figure 4.1</span></a>) that is general to the input alignment and specific to a given <em>k-mer</em> position.</p>
 <ul class="simple">
 <li><p>alignment length</p></li>
 <li><p>download results</p></li>
@@ -97,23 +97,23 @@
 <li><p>selected position</p></li>
 </ul>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="section-2-sequence-diversity">
-<h1>4.2. Section 2 - Sequence diversity<a class="headerlink" href="#section-2-sequence-diversity" title="Permalink to this headline"></a></h1>
-<p>Entropy values indicate the level of variability at the corresponding <em>k-mer</em> positions, with zero representing completely conserved positions. Plots provide a holistic view of the diversity and are responsive and interactive (one can easily hover and see the approximate entropy value of the hovered position).</p>
+<section class="tex2jax_ignore mathjax_ignore" id="sequence-diversity">
+<h1>4.2. Sequence diversity<a class="headerlink" href="#sequence-diversity" title="Permalink to this headline"></a></h1>
+<p>Entropy values indicate the level of variability at the corresponding <em>k-mer</em> positions, with zero representing completely conserved positions. Plot <a class="reference internal" href="#figure-4"><span class="std std-ref">(Figure 4.2)</span></a> provide a holistic view of the diversity and are responsive and interactive (one can easily hover and see the approximate entropy value of the hovered position).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For a benchmark, the peak absolute entropy of 9.2 and total variants of 98% were observed for HIV-1 clade B <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0059994">(Hu et al., 2013)</a>.</p>
 </div>
 <p>The methodology for calculation of Shannon’s entropy at each <em>k-mer</em> position is as per <a class="reference external" href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0000272">Khan et al., (2008)</a>.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="section-3-and-4-diversity-motifs">
-<h1>4.3. Section 3 and 4 - Diversity motifs<a class="headerlink" href="#section-3-and-4-diversity-motifs" title="Permalink to this headline"></a></h1>
-<p>All sequences at each of the <em>k-mer</em> positions in the protein alignments were quantified for distinct sequences and ranked-classified into diversity motifs based on their incidences, as explained above under the <a class="reference internal" href="about.html"><span class="doc std std-doc">About</span></a> section.</p>
-<p>Users can select a position from the “SELECTED POSITION” box, in the upper right corner to browse the motif distribution of the position.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="diversity-motifs">
+<h1>4.3. Diversity motifs<a class="headerlink" href="#diversity-motifs" title="Permalink to this headline"></a></h1>
+<p>All sequences at each of the <em>k-mer</em> positions in the protein alignments were quantified for distinct sequences and ranked-classified into diversity motifs <a class="reference internal" href="#figure-4"><span class="std std-ref">(Figure 4.3-4)</span></a> based on their incidences, as explained above under the <a class="reference internal" href="about.html"><span class="doc std std-doc">About</span></a> section.</p>
+<p>Users can select a position from the “SELECTED POSITION” box <a class="reference internal" href="#figure-4"><span class="std std-ref">(Figure 4.1)</span></a>, in the upper right corner to browse the motif distribution of the position.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="section-5-sequence-metadata">
-<h1>4.4. Section 5 - Sequence Metadata<a class="headerlink" href="#section-5-sequence-metadata" title="Permalink to this headline"></a></h1>
-<p>If the header format is provided in the analysis parameters (as described in the above <a class="reference internal" href="parameters.html"><span class="doc std std-doc">Parameters</span></a>, DiMA will make a pie chart for each type of the metadata.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="sequence-metadata">
+<h1>4.4. Sequence Metadata<a class="headerlink" href="#sequence-metadata" title="Permalink to this headline"></a></h1>
+<p>If the header format is provided in the analysis parameters (as described in the above <a class="reference internal" href="parameters.html"><span class="doc std std-doc">Parameters</span></a>, DiMA will make a pie chart <a class="reference internal" href="#figure-4"><span class="std std-ref">(Figure 4.5)</span></a> for each type of the metadata.</p>
 <p>The user should select a specific <em>k-mer</em> from the selected position for the metadata to appear. By default, the first peptide will be selected. In the example below, the index sequence is selected and host species distribution is shown in the plot.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="data-synthesis-and-further-analysis">
@@ -130,7 +130,7 @@
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="download">
 <h1>4.6. Download<a class="headerlink" href="#download" title="Permalink to this headline"></a></h1>
-<p>Users can download the raw results file in JSON format from the most right bottom icon.</p>
+<p>The DiMA output, top panel <a class="reference internal" href="#figure-4"><span class="std std-ref">(Figure 4.1)</span></a> allows for downloading of the analysis results in JSON and XLSX formats. The JSON file contains the complete analysis results as key-value pairs, which can be viewed using a public JSON viewer tool (such as <a class="reference external" href="https://jsonformatter.org/json-viewer">https://jsonformatter.org/json-viewer</a>). Additionally, the XLSX file provides for easier viewing through an MS Excel application or equivalent that supports the format. The concatenated list of HCS based on a user-defined index incidence threshold can also be downloaded (JSON format) and viewed in a text editor or JSON viewer.</p>
 </section>
 
 

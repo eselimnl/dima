@@ -8,6 +8,8 @@ Welcome to DiMA User Manual
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
+   :glob:
    :caption: Contents:
     about.md
 

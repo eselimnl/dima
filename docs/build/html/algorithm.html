@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.1. Entropy algorithm &mdash; DiMA User Manual .. documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> DiMA User Manual
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">2.1. Entropy algorithm</a></li>
+<li><a class="reference internal" href="#performance-testing-of-dima">2.2. Performance testing of DiMA</a></li>
+<li><a class="reference internal" href="#performance-testing-of-sample-size-bias-correction">2.3. Performance testing of Sample size bias correction</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DiMA User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>2.1. Entropy algorithm</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/algorithm.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <dl class="simple myst" id="figure-2">
+<dt><img alt="workflow" src="_images/workfloww.jpg" /></dt><dd><p><strong>Figure 2. Workflow schema.</strong> <em><strong>Input:</strong></em> Viral protein sequences, typically obtained from publicly available databases (NCBI virus and GISAID, among others), aligned and submitted to DiMA in aligned FASTA (<em>.afa)</em> format. <em><strong>Process:</strong></em> DiMA provides a quantitative measure of sequence diversity by use of Shannon’s entropy, applied via a user-defined <em>k-mer</em> sliding window. Further, the entropy value is corrected for sample size bias by applying a statistical adjustment (Lipinski’s rule). Additionally, DiMA further interrogates the diversity by dissecting the entropy value at each <em>k-mer</em> position to various distinct <em>k-mer</em> sequences that are classified into diversity motifs (index, major, minor and unique; see Section 3 for the definition of the diversity motifs) based on their incidence. <em><strong>Output:</strong></em> The entropy values, diversity motifs, and each of the <em>k-mer</em> corresponding metadata is plotted to provide a panoramic overview of the protein sequence diversity.</p>
+</dd>
+</dl>
+<section class="tex2jax_ignore mathjax_ignore" id="entropy-algorithm">
+<h1>2.1. Entropy algorithm<a class="headerlink" href="#entropy-algorithm" title="Permalink to this headline"></a></h1>
+<a class="bg-primary reference internal image-reference" href="_images/entropy_algorithm.svg" id="figure-3"><img alt="entropy_calculation" class="bg-primary align-center" height="1600px" id="figure-3" src="_images/entropy_algorithm.svg" width="1000px" /></a>
+<dl class="simple myst">
+<dt><a></a></dt><dd><p><strong>Figure 3. Entropy algorithm.</strong></p>
+</dd>
+</dl>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="performance-testing-of-dima">
+<h1>2.2. Performance testing of DiMA<a class="headerlink" href="#performance-testing-of-dima" title="Permalink to this headline"></a></h1>
+<p>DiMA has been extensively tested with 18 protein datasets from six viral species. External validation of our tool has been performed by three individuals, with a total of 36 protein datasets, originating from three viral species.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="performance-testing-of-sample-size-bias-correction">
+<h1>2.3. Performance testing of Sample size bias correction<a class="headerlink" href="#performance-testing-of-sample-size-bias-correction" title="Permalink to this headline"></a></h1>
+<p>As it has explained in <a class="reference internal" href="#figure-3"><span class="std std-ref">Figure 3</span></a>, entropy is corrected for sample size bias. Two experiments using DNA polymerase (Pol) protein of Human immunodeficiency virus type 1 (HIV-1) group M, with curated alignment, downloaded from the <a class="reference external" href="https://www.hiv.lanl.gov/content/sequence/NEWALIGN/align.html">Los Alamos HIV sequence database</a> were designed to test this methodology. In both of them, baseline (uncorrected) entropy values were compared with sample size bias corrected entropy values. The difference (deviation) of these values were evaluated over 100 iteration. Experiment details and conclusions are listed below.</p>
+<p>1- Mean entropy value of overall positions</p>
+<a class="bg-primary reference internal image-reference" href="_images/allpositions_entropy_deviation_100run.svg"><img alt="mean_deviation" class="bg-primary align-center" height="500px" src="_images/allpositions_entropy_deviation_100run.svg" /></a>
+<p><strong>Conclusions:</strong></p>
+<ol class="arabic simple">
+<li><p>There is very little variation between the corrected entropy values upon multiple repeats - a range of 0.007 was observed</p></li>
+<li><p>If we take the average of all the corrected entropy values for the same position (repeated 100 times), and compare that with the average of the baseline of the same number of repeats, then the difference is approximately 0.01.</p></li>
+</ol>
+<p>2- 4 positions from different conservation levels (Index incidence of 1, 15, 50, 98)</p>
+<a class="bg-primary reference internal image-reference" href="_images/clevel_entropy_deviation_100run.svg"><img alt="clevel_deviation" class="bg-primary align-center" height="500px" src="_images/clevel_entropy_deviation_100run.svg" /></a>
+<p><strong>Conclusions:</strong></p>
+<ol class="arabic simple">
+<li><p>The difference between the baseline and corrected entropy is affected by the inherent diversity of the sequences. The higher the diversity, the higher the difference between the two entropy values, with as high as approximately a difference of 2 entropy units for extremely diverse dataset.</p></li>
+<li><p>The baseline entropy value appears to be generally an over-estimate relative to the corrected entropy, which can be a reflection of better data distribution achieved through the resampling approach of the corrected entropy.</p></li>
+</ol>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Authors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

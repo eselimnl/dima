@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.1. Sequence Diversity Dynamics Analyser for Viruses (DiMA) &mdash; DiMA User Manual .. documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> DiMA User Manual
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">1.1. Sequence Diversity Dynamics Analyser for Viruses (DiMA)</a></li>
+<li><a class="reference internal" href="#accesibility">1.2. Accesibility</a></li>
+<li><a class="reference internal" href="#browser-compatibility">1.3. Browser compatibility</a></li>
+<li><a class="reference internal" href="#frontend-backend-frameworks">1.4. Frontend/Backend Frameworks</a></li>
+<li><a class="reference internal" href="#novel-features">1.5. Novel features</a></li>
+<li><a class="reference internal" href="#defining-diversity-motifs">1.6. Defining diversity motifs</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DiMA User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>1.1. Sequence Diversity Dynamics Analyser for Viruses (DiMA)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/about.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="sequence-diversity-dynamics-analyser-for-viruses-dima">
+<h1>1.1. Sequence Diversity Dynamics Analyser for Viruses (DiMA)<a class="headerlink" href="#sequence-diversity-dynamics-analyser-for-viruses-dima" title="Permalink to this headline"></a></h1>
+<p>Viral infectious diseases are a major public health threat. Sequence diversity is one of the major challenges in the design of diagnostic, prophylactic and therapeutic interventions against viruses. The diversity can be an outcome of a combination of underlying evolutionary processes (mutation, recombination, and assortment). A continuing goal is a greater understanding of viral proteome sequence diversity, the dynamics of substitutions, and effective strategies to overcome the diversity for drug or vaccine design.</p>
+<p>Herein, we present Diversity Motif Analyser (DiMA), a tool designed to facilitate the quantification and dissection of viral sequence diversity dynamics. DiMA provides a quantitative measure of sequence diversity by use of Shannon’s entropy (PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/18698358/">18698358</a>), applied via a user-defined <em>k-mer</em> sliding window to a protein alignment. Additionally, DiMA further interrogates the diversity by dissecting the entropy at each aligned <em>k-mer</em> position to various diversity motifs (PMIDs: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/32518710/">32518710</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/23593157/">23593157</a>), based on the incidence of distinct <em>k-mer</em> sequences at the position. At a given position, index is the predominant sequence and all other distinct <em>k-mer</em>s are referred to as total variants to the index, sub-classified into major variant (the most common variant), minor variants (comprising of <em>k-mer</em>s with incidence lower than major and higher than unique), and unique variants (<em>k-mer</em>s seen only once in the alignment). Moreover, the description line of the sequences in the input alignment can be enriched for inclusion of meta-data as part of the analysis, such as spatio-temporal information, among others. DiMA outputs a JSON file that provides multiple facets of sequence diversity: sequence name, <em>k-mer</em> position, entropy, distinct <em>k-mer</em>s at the position, and their incidence, motif classification and metadata (if available). DiMA enables comparative sequence diversity dynamics analyses, within and between proteins of a virus species, and proteomes of different species.</p>
+<p>DiMA is an outcome of many years of viral studies on several different species since 2007. These studies have been published in peer-reviewed journals (PMIDs: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/17434154/">17434154</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/18030326/">18030326</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/18698358/">18698358</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/19401763/">19401763</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/21471731/">21471731</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/22573867/">22573867</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/23593157/">23593157</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/26680743/">26680743</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/29322922/">29322922</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/29363421/">29363421</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/31874646/">31874646</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/34068495/">34068495</a> and <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/32518710/">32518710</a> and international conferences. Besides being available as a webserver, it can also be downloaded as a standalone client tool (<a class="reference external" href="https://github.com/PU-SDS/DiMA">https://github.com/PU-SDS/DiMA</a>), particularly for big data analyses.</p>
+<p>DiMA webserver has been under development since March 2020. It has been extensively tested with 18 datasets (9 structural and 9 non-structural proteins) from six viral species. External validation of our tool has been performed by three individuals, with a total of 36 datasets (18 structural and 18 non-structural proteins), originating from three viral species.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="accesibility">
+<h1>1.2. Accesibility<a class="headerlink" href="#accesibility" title="Permalink to this headline"></a></h1>
+<p>The webserver is publicly available at:
+<a class="reference external" href="https://dima.bezmialem.edu.tr/">https://dima.bezmialem.edu.tr/</a></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="browser-compatibility">
+<h1>1.3. Browser compatibility<a class="headerlink" href="#browser-compatibility" title="Permalink to this headline"></a></h1>
+<p><img alt="browserc" src="_images/browserc.png" /></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="frontend-backend-frameworks">
+<h1>1.4. Frontend/Backend Frameworks<a class="headerlink" href="#frontend-backend-frameworks" title="Permalink to this headline"></a></h1>
+<p>Python FastAPI utilized for DiMA webserver Backend.
+ReactJS utilized for DiMA webserver Frontend.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="novel-features">
+<h1>1.5. Novel features<a class="headerlink" href="#novel-features" title="Permalink to this headline"></a></h1>
+<table class="docutils align-default" id="example-table">
+<caption><span class="caption-text">Table 1. Novel features of DiMA compared to similar web servers</span><a class="headerlink" href="#example-table" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Features</p></th>
+<th class="head"><p><a class="reference external" href="https://dima.bezmialem.edu.tr/">DiMA</a></p></th>
+<th class="head"><p><a class="reference external" href="http://imed.med.ucm.es/PVS/">PVS</a></p></th>
+<th class="head"><p><a class="reference external" href="https://www.hiv.lanl.gov/content/sequence/ENTROPY/entropy.html">LANL Entropy</a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Nucleic acid/amino acid sequence</p></td>
+<td><p>✅ / ✅</p></td>
+<td><p>❌ / ✅</p></td>
+<td><p>✅ / ✅</p></td>
+</tr>
+<tr class="row-odd"><td><p>Shannon Entropy on user-defined sliding window</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p>Size bias correction</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Diversity motifs</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Frequency calculation for each k-mer</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Metadata inclusion</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Concatenation of consecutive conserved sequences</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multiple interactive plots</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Process alignments up to 100 megabytes (MB)</p></td>
+<td><p>✅⭐</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="simple myst">
+<dt><a></a></dt><dd><p>⭐ Large file possible with <a class="reference external" href="https://github.com/PU-SDS/DiMA">CLI version</a>.</p>
+</dd>
+</dl>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="defining-diversity-motifs">
+<h1>1.6. Defining diversity motifs<a class="headerlink" href="#defining-diversity-motifs" title="Permalink to this headline"></a></h1>
+<p>For a given sequence alignment, all sequences at each of the aligned <em>k-mer</em> positions are quantified for distinct sequences and ranked-classified into diversity motifs based on their incidences, as described in Hu et al. (2013) (Supplementary Figure 1, see extract below) (PMID: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/23593157/">23593157</a>).</p>
+<a class="bg-primary reference internal image-reference" href="_images/diversity_motifs.svg"><img alt="diversitymotifs" class="bg-primary align-center" src="_images/diversity_motifs.svg" width="300px" /></a>
+<dl class="simple myst">
+<dt><a></a></dt><dd><p><strong>Figure 1. Definitions of diversity motifs.</strong> The ‘‘Index’’ nonamer is the most prevalent sequence, present in 8 of the 20 isolates. The ‘‘Major’’ variant is the most common variant of the index (5/20). ‘‘Minor’’ variants are multiple different repeated sequences, each with incidences less than the major variant. ‘‘Unique’’ variants are those represented by a single aligned sequence. Distinct variant sequences at a given nonamer position are the different sequence at the position; in this example one of major, two of minor, and three of unique.</p>
+</dd>
+</dl>
+<span class="target" id="section-two"></span></section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Authors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

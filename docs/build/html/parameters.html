@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1. Input file &mdash; DiMA User Manual .. documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> DiMA User Manual
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">3.1. Input file</a></li>
+<li><a class="reference internal" href="#parameters">3.2. Parameters</a><ul>
+<li><a class="reference internal" href="#sample-name">3.2.1. Sample name</a></li>
+<li><a class="reference internal" href="#low-support-threshold">3.2.2. Low support threshold</a></li>
+<li><a class="reference internal" href="#k-mer-length">3.2.3. K-mer length</a></li>
+<li><a class="reference internal" href="#header-format-to-include-metadata">3.2.4. Header format to include metadata</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DiMA User Manual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>3.1. Input file</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/parameters.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="input-file">
+<h1>3.1. Input file<a class="headerlink" href="#input-file" title="Permalink to this headline"></a></h1>
+<p>DiMA only uses multiple sequence alignment (protein sequences; DNA should also work) in (aligned) FASTA (<em>.afa</em> or <em>.fas</em>) format. Any existing, published alignment tool can be used to produce the MSA, such as MAFFT or MUSCLE, as long as the aligned sequences are provided to DiMA as input in (aligned) FASTA format.</p>
+</section>
+<section id="parameters">
+<h1>3.2. Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"></a></h1>
+<section id="sample-name">
+<h2>3.2.1. Sample name<a class="headerlink" href="#sample-name" title="Permalink to this headline"></a></h2>
+<p>Name of sequence to be analysed.</p>
+</section>
+<section id="low-support-threshold">
+<h2>3.2.2. Low support threshold<a class="headerlink" href="#low-support-threshold" title="Permalink to this headline"></a></h2>
+<p>The support is defined as the number of sequences at a given <em>k-mer</em> position that do not harbor a gap and unknown and/or ambiguous residues. Positions below a statistical support of 30 sequences (default) are defined as of low support. The user has the flexibility to set the threshold for low support.</p>
+</section>
+<section id="k-mer-length">
+<h2>3.2.3. K-mer length<a class="headerlink" href="#k-mer-length" title="Permalink to this headline"></a></h2>
+<p>Select a <em>k-mer</em> window size that is appropriate for the analysis.\
+While the minimum applicable size is 3, the maximum can equal to the alignment length of the uploaded input file. By default, DiMA uses a window size of nine (9; nonamer; 9-mer) to evaluate the viral diversity with respect to cellular immune response.</p>
+</section>
+<section id="header-format-to-include-metadata">
+<h2>3.2.4. Header format to include metadata<a class="headerlink" href="#header-format-to-include-metadata" title="Permalink to this headline"></a></h2>
+<p>This optional functionality allows annotation of the distinct sequences at each <em>k-mer</em> position  with respective cognate sequence metadata, such as collection date, geographical location, isolation host. Simply, it parses the information on the sequence header (definition/description line).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Example of a definition line: &gt;ATY74257.1 |2017-03-02|China: Kunming|Homo sapiens</p>
+</div>
+<p>Because the format of metadata varies between databases, DiMA has relied on the format of <a class="reference external" href="https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/">NCBI Virus</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Authors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

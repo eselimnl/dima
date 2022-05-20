@@ -23,9 +23,9 @@ DiMA has been extensively tested with 18 protein datasets from six viral species
 
 # 2.3. Performance testing of Sample size bias correction
 
-As it has explained in [Figure 3](Figure-3), entropy is corrected for sample size bias. Two experiments using DNA polymerase (Pol) protein of Human immunodeficiency virus type 1 (HIV-1) group M, with curated alignment, downloaded from the [Los Alamos HIV sequence database](https://www.hiv.lanl.gov/content/sequence/NEWALIGN/align.html) were designed to test this methodology. In both of them, baseline (uncorrected) entropy values were compared with sample size bias corrected entropy values. The difference (deviation) of these values were evaluated over 100 iteration. Experiment details and conclusions are listed below. 
+As it was explained in [Figure 3](Figure-3), entropy is corrected for sample size bias. Two tests by use of DNA polymerase (Pol) protein of Human immunodeficiency virus type 1 (HIV-1) group M, with curated alignment, downloaded from the [Los Alamos HIV sequence database](https://www.hiv.lanl.gov/content/sequence/NEWALIGN/align.html) were done the difference between uncorrected (baseline) and corrected entropy values. The difference (deviation) of these values were evaluated over 100 iterations. Experiment details and conclusions are listed below.
 
-1- Mean entropy value of overall positions
+1- Mean entropy value for all positions of the protein
 
 ```{image} images/allpositions_entropy_deviation_100run.svg
 :alt: mean_deviation
@@ -36,10 +36,10 @@ As it has explained in [Figure 3](Figure-3), entropy is corrected for sample siz
 
 **Conclusions:**
 
-1. There is very little variation between the corrected entropy values upon multiple repeats - a range of 0.007 was observed
-2. If we take the average of all the corrected entropy values for the same position (repeated 100 times), and compare that with the average of the baseline of the same number of repeats, then the difference is approximately 0.01.
+1. There was very little variation between the protein-wide mean corrected entropy value over the multiple runs - a maximum difference of ~0.008 was observed.
+2. If we take the average of the protein-wide mean corrected entropy values over the 100 iterations and compare that with the average for the baseline, the difference was ~0.01.
 
-2- 4 positions from different conservation levels (Index incidence of 1, 15, 50, 98)
+2- Entropy value across four different conservation levels (extremely diverse, ED with index incidence of 1%; highly diverse, HD with index incidence of 15%; moderately diverse, MD with index incidence of 50%; highly conserved, HC with index incidence of 98%)
 
 ```{image} images/clevel_entropy_deviation_100run.svg
 :alt: clevel_deviation
@@ -50,5 +50,18 @@ As it has explained in [Figure 3](Figure-3), entropy is corrected for sample siz
 
 **Conclusions:** 
 
-1. The difference between the baseline and corrected entropy is affected by the inherent diversity of the sequences. The higher the diversity, the higher the difference between the two entropy values, with as high as approximately a difference of 2 entropy units for extremely diverse dataset.
-2. The baseline entropy value appears to be generally an over-estimate relative to the corrected entropy, which can be a reflection of better data distribution achieved through the resampling approach of the corrected entropy.
+1. The difference between the baseline and corrected entropy is affected by the inherent diversity of the sequences at the given position. The higher the diversity, the higher the difference between the two entropy values, with as high as approximately a difference of 2 entropy units for the extremely diverse position. 
+2. The baseline entropy value appears to be generally an over-estimate relative to the corrected entropy, which can be a reflection of better data distribution achieved through the resampling approach for the corrected entropy.
+
+3- Entropy values for 100 positions of the protein
+
+```{image} images/100positions_entropy_deviation_100run.svg
+:alt: 100deviation
+:class: bg-primary
+:height: 500px
+:align: center
+```
+
+**Conclusions:** 
+
+1. Supportive findings were observed with the first and second tests. 

@@ -47,3 +47,11 @@ Welcome to DiMA User Manual
 .. faqs:
 .. include:: faqs.md
    :parser: myst_parser.sphinx_  
+   
+6. Acknowledgement
+==================
+
+.. faqs:
+.. include:: acknowledgement.md
+   :parser: myst_parser.sphinx_     
+   

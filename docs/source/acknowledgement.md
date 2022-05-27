@@ -14,6 +14,7 @@ We thank all those who used and/or evaluated DiMA and/or its earlier forms, dire
 - Heiny Tan
 - Johann Shane Tian
 - Lim Wan Ching
+- Melike Karakaya
 - Natascha May A/P Thevasagayam 
 - Pendy Tok
 - Qi Ying Koo

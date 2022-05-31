@@ -1,8 +1,6 @@
 1. How to cite?
 
-For now: 
 Tharanga, S., Hu, Y., Unlu, E. S., Sjaugi, M. F., Celik, M. A., Hekimoglu, H., Miotto, O., Oncel, M. M., & Khan, A. M. (2022). _DiMA: Sequence Diversity Dynamics Analyser for Viruses_. https://doi.org/10.48550/arxiv.2205.13915
-
 
 
 # 5.1. Support

@@ -41,14 +41,21 @@ Welcome to DiMA User Manual
 .. include:: results.md
    :parser: myst_parser.sphinx_   
    
-5. FAQs and Support
+5. DiMA-CLI (Large samples)
+==================
+
+.. results:
+.. include:: cli.md
+   :parser: myst_parser.sphinx_   
+   
+6. FAQs and Support
 ==================
 
 .. faqs:
 .. include:: faqs.md
    :parser: myst_parser.sphinx_  
    
-6. Acknowledgement
+7. Acknowledgement
 ==================
 
 .. faqs:

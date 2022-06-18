@@ -30,7 +30,7 @@ Installing the latest version is possible with `pip install dima-cli`. Python ve
 
 ## 5.4. Advanced Usage Examples
 
-Customazing the parameters may be neccesary, especially for the big data analyses. Adjusting the [parameters](https://github.com/PU-SDS/DiMA#command-line-arguments) is primarily reasonal for: inclusion of metadata by parsing of the headers, setting a support threshold for positions, prefering different k-mer sizes. Example usage:
+Customazing the parameters may be neccesary, especially for the big data analyses. Adjusting the [parameters](https://github.com/PU-SDS/DiMA#command-line-arguments) is primarily reasonable for: inclusion of metadata by parsing of the headers, setting a support threshold for positions, prefering different k-mer sizes. Example usage:
 
 `dima-cli -i aligned_sequences_nt.afa -l 9 -f "accession|host|geography|year" -a protein -t json -c hcs.json -e 100 -o results.json`
 

@@ -32,11 +32,11 @@ ReactJS utilized for DiMA webserver Frontend.
   - [PVS](http://imed.med.ucm.es/PVS/)
   - [LANL Entropy](https://www.hiv.lanl.gov/content/sequence/ENTROPY/entropy.html)
   - [BV-BRC Variation Analysis](https://www.bv-brc.org/app/MSA)
-* - Nucleic acid/amino acid sequence
-  - ✅ / ✅
-  - ❌ / ✅
-  - ✅ / ✅
-  - ✅ / ✅
+* - Analysis of nucleic acid - amino acid sequences
+  - ✅ - ✅
+  - ❌ - ✅
+  - ✅ - ✅
+  - ✅ - ✅
 * - Shannon Entropy on user-defined sliding window
   - ✅
   - ❌

@@ -23,7 +23,7 @@ ReactJS utilized for DiMA webserver Frontend.
 
 # 1.5. Novel features 
 
-```{list-table} Table 1. Novel features of DiMA compared to similar web servers
+```{list-table} Table 1. Novel features of DiMA in comparison with other web servers for viral sequence variation analysis
 :header-rows: 1
 :name: example-table
 

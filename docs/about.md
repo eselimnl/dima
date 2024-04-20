@@ -30,8 +30,8 @@ ReactJS utilized for DiMA webserver Frontend.
 * - Features
   - [DiMA](https://dima.bezmialem.edu.tr/)
   - [PVS](http://imed.med.ucm.es/PVS/)
-  - [LANL Entropy](https://www.hiv.lanl.gov/content/sequence/ENTROPY/entropy.html)
-  - [BV-BRC Variation Analysis](https://www.bv-brc.org/app/MSA)
+  - [LANL](https://www.hiv.lanl.gov/content/sequence/ENTROPY/entropy.html)
+  - [BV-BRC](https://www.bv-brc.org/app/MSA)
 * - Analysis of nucleic acid - amino acid sequences
   - ✅ - ✅
   - ❌ - ✅

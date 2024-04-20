@@ -67,19 +67,19 @@ ReactJS utilized for DiMA webserver Frontend.
   - ✅  
   - ❌
   - ❌
-* - Output and visualizations 
-  - Dashboard with interactive plots
-  - Static page with a line plot and interactive 3D-structure
-  - Static page and a line plot
-  - Static images: line plot, sequence logo
+* - Multiple interactive visualizations 
+  - ✅  
+  - ❌
+  - ❌
+  - ❌
 * - Web service input size limit 
   - 100 MB ⭐ 
   - ~0.2 MB 
-  - No limit
+  - ? 
   - No limit
 ```
 <a></a> 
-: ⭐ Analysis of larger files possible with [CLI version](https://github.com/PU-SDS/DiMA).
+: ⭐ Analysis of larger files possible with [CLI version](https://github.com/PU-SDS/DiMA) which there is no limit.
 # 1.6. Defining diversity motifs
 
 For a given sequence alignment, all sequences at each of the aligned *k-mer* positions are quantified for distinct sequences and ranked-classified into diversity motifs based on their incidences, as described in Hu et al. (2013) (Supplementary Figure 1, see extract below) (PMID: [23593157](https://pubmed.ncbi.nlm.nih.gov/23593157/)).  

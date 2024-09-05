@@ -8,8 +8,6 @@
 ```{image} images/entropy_algorithm.png
 :alt: entropy_calculation
 :class: bg-primary
-:height: 1600px
-:width: 1000px
 :align: center
 ```
 
@@ -25,10 +23,9 @@ DiMA has been extensively tested with 18 protein datasets from six viral species
 
 As it was explained in [Figure 3](Figure-3), entropy is corrected for sample size bias. Uncorrected (baseline) and corrected entropy values were calculated over a wide range of sample sizes (100 to 100,000)subsetted from SARS-CoV-2 Spike protein alignment. Then, protein-wide average entropy were plotted for each dataset. 
 
-```{image} images/experiment_entropy_debiasing.png
+```{image} images/expiriment_entropy_debiasing.png
 :alt: mean_deviation
 :class: bg-primary
-:height: 500px
 :align: center
 ```
 
